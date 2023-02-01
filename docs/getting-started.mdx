@@ -12,8 +12,11 @@ This page will guide you through setting up your new Upsy Desky with your home a
 
 Use one of the two below methods to connect your Upsy Desky to Wi-Fi.
 
-<details>
-<summary>Via Captive Portal (Hotspot)</summary>
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs>
+  <TabItem value="captive-portal" label="Captive Portal (Wireless)" default>
 
 :::note TL;DR
 Connect to the `upsy-desky-XXXXXX` network (password: `hunter2hunter2`), enter Wi-Fi credentials in captive portal prompt.
@@ -23,10 +26,8 @@ Plug your Upsy Desky into power, and you should see a Wi-Fi network starting wit
 
 Follow the instructions on this page to connect it to your Wi-Fi network.
 
-</details>
-
-<details>
-<summary>Via USB</summary>
+  </TabItem>
+  <TabItem value="usb" label="USB (Wired)">
 
 :::note TL;DR
 Connect to computer, use [ESPHome Web](https://web.esphome.io/) to provision.
@@ -34,7 +35,8 @@ Connect to computer, use [ESPHome Web](https://web.esphome.io/) to provision.
 
 You can also connect your Upsy Desky to Wi-Fi by plugging it in to your computer via USB. First, plug it in to your computer with a USB-C cable, then head to the [ESPHome Web](https://web.esphome.io/) tool. Connect your Upsy Desky, press the kebab menu (three dots), and Configure Wi-Fi. Select your Wi-Fi network from there, enter credentials, and it should connect.
 
-</details>
+  </TabItem>
+</Tabs>
 
 ## Step 2: Connect to Home Assistant
 
