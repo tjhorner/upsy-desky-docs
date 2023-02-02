@@ -48,6 +48,12 @@ const config = {
         defaultMode: 'dark',
         respectPrefersColorScheme: true
       },
+      algolia: {
+        appId: "N36PZOL6ZV",
+        apiKey: "f5c57c0b4b677e0c9e137c3d55a50eb5",
+        indexName: "upsy-desky",
+        contextualSearch: true
+      },
       navbar: {
         title: 'Upsy Desky',
         items: [
