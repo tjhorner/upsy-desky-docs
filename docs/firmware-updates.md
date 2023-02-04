@@ -1,0 +1,34 @@
+---
+sidebar_position: 1.9
+---
+
+# Firmware Updates
+
+To get the latest features and bug fixes, you will need to update your Upsy Desky's firmware. There are a few ways to do this, and we will go over each of them.
+
+## ESPHome Dashboard
+
+This is the recommended way to keep your Upsy Desky up-to-date, and allows you to customize it to your needs by editing the ESPHome config. If you have adopted your Upsy Desky into the dashboard automatically, it will come with a stock config. You can re-compile that configuration at any time to retrieve the latest version.
+
+You can learn how to use the ESPHome Dashboard in their documentation. There is a convenient [Home Assistant addon](https://esphome.io/guides/getting_started_hassio.html) you can use, or you can use a [Docker image](https://esphome.io/guides/getting_started_command_line.html).
+
+Once ESPHome Dashboard is installed, you should see the Upsy Desky in the list with a green "adopt" button. Click that button to adopt the device into the dashboard. You can then edit the configuration and re-compile it to get the latest firmware, or make any changes you want.
+
+## OTA Updates
+
+On every release of the stock firmware, an update binary is published that you can easily upload to your Upsy Desky.
+
+1. Go to the Upsy Desky's IP in your browser to access the web interface.
+2. Download the latest release binary from the [releases page](https://github.com/tjhorner/upsy-desky/releases/latest). For OTAs, you want to grab the `firmware.bin` file.
+3. Select the downloaded `firmware.bin` file in the web interface in the OTA section.
+4. After a while, the OTA will be applied and your Upsy Desky will have the latest firmware.
+
+## Factory Reset
+
+You can also factory reset your Upsy Desky with the stock firmware.
+
+:::warning
+Factory resets will wipe out any configuration or customizations you have performed on your Upsy Desky.
+:::
+
+To do so, head to the [flashing page](https://shop.horner.tj/things/upsy-desky/setup/stock) in a Chromium-based browser and follow the instructions there. It will automatically grab the latest stock firmware from GitHub and flash it to your Upsy Desky.
