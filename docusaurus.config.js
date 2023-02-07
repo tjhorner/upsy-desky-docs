@@ -22,6 +22,17 @@ const config = {
     locales: ['en'],
   },
 
+  plugins: [
+    [
+      "@dipakparmar/docusaurus-plugin-umami",
+      /** @type {import('@dipakparmar/docusaurus-plugin-umami').Options} */
+      ({
+        websiteID: "d23d5a58-51a7-47a7-a3dd-2793734b2e5c",
+        analyticsDomain: "umami.horner.tj",
+      }),
+    ],
+  ],
+
   presets: [
     [
       'classic',
