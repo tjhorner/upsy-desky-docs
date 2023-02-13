@@ -7,6 +7,7 @@ These desk control boxes are verified to be compatible with the Upsy Desky:
 - FRM053-2 (Uplift v2)
 - FULLYCB2C-A (Fully Jarvis)
 - FULLYCB3-A (Fully Jarvis, using the `uplift` decoder)
+- JCB36N2CA-230 (Fully Jarvis)
 
 Support outside of these models is not guaranteed, but contributions are welcome if you wish to add support for your own! See the [Reverse Engineering Guide](../advanced/reverse-engineering/index.md) for more detailed instructions on how to do so.
 
