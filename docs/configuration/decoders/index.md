@@ -24,6 +24,7 @@ Here is a list of known control box model numbers and the decoders that work wit
 
 - FULLYCB2C-A: `jarvis`
 - FULLYCB3-A: `uplift`
+- JCB36N2CA-230: `jarvis`
 
 ### Uplift v2
 
