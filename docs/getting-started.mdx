@@ -41,10 +41,14 @@ You can also connect your Upsy Desky to Wi-Fi by plugging it in to your computer
 ## Step 2: Connect to Home Assistant
 
 :::note TL;DR
-Home Assistant will ask to add the device. Do that.
+Home Assistant will ask to add the device. Do that. You can also [rename it](./configuration/renaming/index.md) if you want.
 :::
 
 Once connected to your network, Home Assistant should automatically pick the device up and offer to add it. If it doesn't, make sure it's properly connected to Wi-Fi. Check your router's settings to get its IP and add an ESPHome integration to Home Assistant manually, if you need to.
+
+:::info
+It's recommended you [rename it now](./configuration/renaming/index.md) to something more descriptive so that creating automations is easier, and so that you don't need to go through the hassle of changing entity IDs later.
+:::
 
 If you don't use Home Assistant, you can still control your desk from the built-in web UI by navigating to its IP address or hostname in your browser. ESPHome also offers support for several common protocols such as [MQTT](https://esphome.io/components/mqtt.html), so you can use it with any system that supports those. Check [the ESPHome documentation](https://esphome.io/#core-components) for more information on what it supports. (TIL it supports CAN bus? lol)
 
