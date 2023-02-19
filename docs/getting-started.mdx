@@ -14,9 +14,21 @@ Use one of the two below methods to connect your Upsy Desky to Wi-Fi.
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
+import EspInstallButton from '@site/src/components/EspInstallButton';
 
 <Tabs>
-  <TabItem value="captive-portal" label="Captive Portal (Wireless)" default>
+  <TabItem value="usb" label="USB (Wired)" default>
+
+1. Connect the Upsy Desky to your computer via USB
+2. Press the blue connect button below
+3. Press "Connect to Wi-Fi"
+3. Select your Wi-Fi network and enter your password
+
+<EspInstallButton
+  unsupportedMessage="Provisioning via USB only works in browsers which support Web Serial, such as Chrome or Edge. Please provision your Upsy Desky via Wi-Fi instead." />
+
+  </TabItem>
+  <TabItem value="captive-portal" label="Captive Portal (Wireless)">
 
 :::note TL;DR
 Connect to the `upsy-desky-XXXXXX` network (password: `hunter2hunter2`), enter Wi-Fi credentials in captive portal prompt.
@@ -25,15 +37,6 @@ Connect to the `upsy-desky-XXXXXX` network (password: `hunter2hunter2`), enter W
 Plug your Upsy Desky into power, and you should see a Wi-Fi network starting with `upsy-desky` nearby. Connect to it with your phone or laptop (the password is `hunter2hunter2`); the captive portal page should automatically appear but if it doesn't, you can go to `http://192.168.4.1` in your browser. If it still doesn't appear, make sure you are connected to the Upsy Desky's network.
 
 Follow the instructions on this page to connect it to your Wi-Fi network.
-
-  </TabItem>
-  <TabItem value="usb" label="USB (Wired)">
-
-:::note TL;DR
-Connect to computer, use [ESPHome Web](https://web.esphome.io/) to provision.
-:::
-
-You can also connect your Upsy Desky to Wi-Fi by plugging it in to your computer via USB. First, plug it in to your computer with a USB-C cable, then head to the [ESPHome Web](https://web.esphome.io/) tool. Connect your Upsy Desky, press the kebab menu (three dots), and Configure Wi-Fi. Select your Wi-Fi network from there, enter credentials, and it should connect.
 
   </TabItem>
 </Tabs>
