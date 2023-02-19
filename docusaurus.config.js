@@ -66,7 +66,11 @@ const config = {
         contextualSearch: true
       },
       navbar: {
-        title: 'Upsy Desky',
+        logo: {
+          alt: 'Upsy Desky Logo',
+          src: '/img/logo-long.png',
+          srcDark: '/img/logo-inverted.png',
+        },
         items: [
           {
             type: 'doc',
