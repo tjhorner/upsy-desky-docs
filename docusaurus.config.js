@@ -41,7 +41,7 @@ const config = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl:
-            'https://github.com/tjhorner/upsy-desky-docs/tree/main/',
+            'https://github.com/tjhorner/upsy-desky-docs/edit/main/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
