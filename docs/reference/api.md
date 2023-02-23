@@ -4,12 +4,14 @@ The stock firmware enables ESPHome's [Web Server](https://esphome.io/components/
 
 See ESPHome's documentation on the [sensor](https://esphome.io/web-api/index.html#sensor) and [number](https://esphome.io/web-api/index.html#number) endpoints for more information about what responses you will receive.
 
+NB: From firmware release 0.3.0 onwards, every entity name is now prefixed with the desired friendly_name (eg. `upsy_desky`)
+
 ## Get Actual Desk Height
 
 See [Sensor](https://esphome.io/web-api/index.html#sensor)
 
 ```
-GET /sensor/desk_height
+GET /sensor/upsy_desky_desk_height
 ```
 
 ## Get Target Desk Height
@@ -17,7 +19,7 @@ GET /sensor/desk_height
 See [Number](https://esphome.io/web-api/index.html#number)
 
 ```
-GET /number/target_desk_height
+GET /number/upsy_desky_target_desk_height
 ```
 
 ## Set Target Desk Height
@@ -25,7 +27,7 @@ GET /number/target_desk_height
 See [Number](https://esphome.io/web-api/index.html#number)
 
 ```
-POST /number/target_desk_height/set?value=the_value_to_set
+POST /number/upsy_desky_target_desk_height/set?value=the_value_to_set
 ```
 
 ## Set Desk Preset
@@ -35,5 +37,5 @@ See [Button](https://esphome.io/web-api/index.html#button)
 Replace `{n}` with a preset number 1-4.
 
 ```
-POST /button/desk_preset_{n}/press
+POST /button/upsy_desky_desk_preset_{n}/press
 ```
