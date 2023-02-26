@@ -22,7 +22,9 @@ import EspInstallButton from '@site/src/components/EspInstallButton';
 1. Connect the Upsy Desky to your computer via USB
 2. Press the blue connect button below
 3. Press "Connect to Wi-Fi"
-3. Select your Wi-Fi network and enter your password
+4. Select your Wi-Fi network and enter your password
+
+The Upsy Desky will be listed as either "CP2102 USB to UART Bridge Controller" or "Upsy Desky" in the connection list. If you don't see it, make sure you are using a USB data cable (i.e., not power-only), and try installing the [driver](https://www.silabs.com/developers/usb-to-uart-bridge-vcp-drivers?tab=downloads) for the serial chip.
 
 <EspInstallButton
   unsupportedMessage="Provisioning via USB only works in browsers which support Web Serial, such as Chrome or Edge. Please provision your Upsy Desky via Wi-Fi instead." />
