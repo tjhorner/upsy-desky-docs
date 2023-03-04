@@ -4,24 +4,28 @@ sidebar_position: 1.5
 
 # Configuration
 
-Things like the min/max desk height, units, and decoder variant are now set at runtime instead of being statically configured within the ESPHome config. This simplifies things a lot, and lets you configure these options without having to compile the firmware yourself.
+Once you have connected your Upsy Desky to your network, you can configure it by going to its IP address (port 80), or by visiting the device page in Home Assistant.
 
-The stock firmware comes with reasonable defaults for an Uplift v2 desk, but you will need to change them if you have a different desk or wish to change the min/max height. You can find these configuration options in Home Assistant under Settings > Devices & Services > ESPHome > (node name).
+## Initial Setup
 
-![](./config.png)
+### Set Decoder
 
-Most of these require a restart to take effect; just flick the "Restart" switch to restart your Upsy Desky. Once reconnected to Home Assistant, the values will update and persist across reboots.
+Upon first setup, you will want to set the decoder variant that your desk uses. Change the [Height Decoder Variant](../reference/entities.md#height-decoder-variant) to the correct variant for your desk. Generally, it will be the desk's brand name, but in strange scenarios it can be different.
 
-## Config Options
+To find the correct one, cycle through the available options, moving your desk slightly up or down between each change. If the [Desk Height](../reference/entities.md#desk-height) changes, you have found the correct one. Once you've found the correct one, you usually do not need to change it again.
 
-### Height Decoder Variant
+However, it's known that some control boxes may start speaking a different protocol (the reason is unknown), and in that case you will need to repeat the process.
 
-The firmware has several "decoders" baked in for various protocols — choose the one that matches your desk brand. If it doesn't work, try each of the others to see if they work instead.
+You can learn more about decoders [here](decoders/index.md).
 
-### Height Units
+### Set Min & Max Height
 
-Units to display in Home Assistant for desk height and target desk height.
+It is recommended that you set the [Min Target Height](../reference/entities.md#min-target-height) and [Max Target Height](../reference/entities.md#max-target-height) to the lowest and highest heights that your desk can be set to. This will prevent you from accidentally setting the desk to a height that it cannot reach.
 
-### Min/Max Target Height
+### Restart
 
-Sets the min/max value the target height slider will be able to be set to.
+After you have set the decoder variant and the min/max height, you will need to restart the Upsy Desky unit. You can do this by pressing the [Restart](../reference/entities.md#restart) button, or by unplugging it and plugging it back in.
+
+## Further Customization
+
+If you are familiar with ESPHome and wish to make advanced changes, please check out the guide on [customizing the firmware](../advanced/customization/index.md).
