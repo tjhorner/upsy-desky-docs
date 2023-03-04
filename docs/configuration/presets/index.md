@@ -16,4 +16,4 @@ You can set a preset through the virtual "Set Preset X" buttons. First, set your
 
 ![Preset set buttons in Home Assistant](./preset-set.png)
 
-If you do not see these controls, you will probably need to [update your firmware](https://shop.horner.tj/things/upsy-desky/setup/stock).
+If you do not see these controls, you will probably need to [update your firmware](../../firmware-updates.mdx).
