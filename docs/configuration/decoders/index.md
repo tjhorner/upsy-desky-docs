@@ -1,5 +1,11 @@
 # Decoders
 
+:::info
+Since firmware 1.0.0, it is no longer required to manually configure the decoder. It will automatically determine the correct one to use during startup. See [Auto-Detection](#auto-detection) for more information.
+:::
+
+## What is a decoder?
+
 In order to determine the desk height, the firmware uses what we call a decoder in order to interpret the desk's serial protocol. This is the component that handles the bytes coming from the desk's control box and decodes it into a usable height value.
 
 These decoders currently exist:
@@ -8,13 +14,11 @@ These decoders currently exist:
 - `jarvis`
 - `omnidesk`
 
-Despite their names, it is possible for a decoder to work on a different brand of desk. For example, the `uplift` decoder works on Jarvis desks with control box model number FULLYCB3-A. Thus, if you are having issues with a certain decoder, it's a good idea to try the rest in the list to see if your desk works with one of them.
+Despite their names, it is possible for a decoder to work on a different brand of desk. For example, the `uplift` decoder works on Jarvis desks with control box model number FULLYCB3-A.
 
-If none of the decoders work, you may wish to try [reverse engineering](../../advanced/reverse-engineering/index.md) your desk's protocol to create a new decoder and contributing it.
+## Auto-Detection
 
-:::info
-In a future version of the firmware, I would like to add some kind of auto-detection feature so that the decoder does not need to be specified in the configuration.
-:::
+During startup, the firmware will automatically attempt to determine the correct decoder to use. It sends a packet to the control box to wake it up, and cycles through each possible decoder to see which one produces a valid height value. If you are having trouble with this (i.e., the desk height is reported as "Unknown"), please see [this section](../../troubleshooting.mdx#the-desk-height-is-not-being-reported-properly) of the troubleshooting guide for further instructions.
 
 ## Decoders by Model Number
 

@@ -1,0 +1,48 @@
+---
+sidebar_position: 2
+---
+
+# Troubleshooting & Support
+
+## Common Issues
+
+### I don't see the Wi-Fi network during setup
+
+If you don't see a Wi-Fi network starting with `upsy-desky` while the unit is powered, the best thing to try is re-flashing the firmware. If you have a Chromium-based browser, you can do it directly from the web without any downloads. [Flash it here](https://shop.horner.tj/things/upsy-desky/setup/stock), and see if the issue persists. If it does, please join the [Discord server](https://discord.gg/ZHfXKQrSxF) for support.
+
+### I can't connect to my hidden Wi-Fi network
+
+This is unfortunately a limitation of ESPHome — the [Wi-Fi configuration](https://esphome.io/components/wifi.html#configuration-variables) requires that `fast_connect` is enabled for hidden networks, but this cannot be enabled without setting a network in the configuration itself, so I cannot enable this for the stock firmware.
+
+Essentially, you will need to [adopt your Upsy Desky in the ESPHome dashboard](./advanced/customization/index.md) then modify the Wi-Fi configuration to have the `fast_connect` option.
+
+### The desk height is not being reported properly
+
+You may wish to try re-detecting the decoder to use:
+
+1. Press the up or down button on your desk's keypad briefly. This will wake up the control box.
+2. In Home Assistant or the web UI, press the [Re-Detect Decoder](./reference/entities.md#re-detect-decoder) button. This will cycle through each decoder and attempt to determine the correct one.
+
+You can gain more insight into the process by [viewing the logs](#collecting-logs) before starting re-detection.
+
+If none of the decoders work, then your desk may use a protocol that is thus-far undiscovered. Please email support@tjhorner.dev and I will work with you to add support for your desk.
+
+## Other Issues
+
+If you are experiencing other issues, here are some things to try:
+
+- Restart your desk's control box. Sometimes it can get in a weird state which the Upsy Desky cannot recover from.
+- Disconnect and re-connect the Upsy Desky to the control box.
+- Reflash the firmware [here](https://shop.horner.tj/things/upsy-desky/setup/stock).
+
+If all else fails, please join the [Discord server](https://discord.gg/ZHfXKQrSxF) for support. If necessary, we will work to triage an issue on the GitHub repository.
+
+# Collecting Logs
+
+If you are experiencing issues with the Upsy Desky, it may be helpful to collect logs from the device. You can collect the logs from the web UI or via serial.
+
+To collect the logs via USB serial right in your browser, click the Connect button below, choose your Upsy Desky, then "Logs &amp; Console".
+
+import EspInstallButton from '@site/src/components/EspInstallButton';
+
+<EspInstallButton />

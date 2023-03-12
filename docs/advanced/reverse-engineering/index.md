@@ -1,6 +1,6 @@
 # Reverse Engineering Guide
 
-If your desk is not officially supported, or if you are having issues with functionality like getting or setting desk height, presets, etc. and have followed the [Troubleshooting](../../troubleshooting.md) steps, then it is very possible that your desk uses a protocol that the firmware does not yet understand.
+If your desk is not officially supported, or if you are having issues with functionality like getting or setting desk height, presets, etc. and have followed the [Troubleshooting](../../troubleshooting.mdx) steps, then it is very possible that your desk uses a protocol that the firmware does not yet understand.
 
 The protocols for standing desk control boxes are not usually published by their manufacturer, so we have to reverse engineer the communication between the keypad and control box as a man in the middle. Luckily, the hardware for the Upsy Desky is well-suited for this, since we have GPIO on both the RX and TX lines for the control box. No additional debugging hardware required!
 

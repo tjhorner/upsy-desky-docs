@@ -18,6 +18,12 @@ These buttons are used to recall a preset height from your desk's control box. I
 
 These buttons are used to set a preset height on your desk's control box. It is the same as pressing "M", then the corresponding preset on the physical keypad.
 
+### Re-Detect Decoder
+
+This button is used to re-detect the decoder variant that will be used to decode the height from the control box. If you are having trouble with the desk height entity, you may want to try this button.
+
+You can read more about decoders [here](../configuration/decoders/index.md).
+
 ### Restart
 
 This button is used to restart the Upsy Desky unit, for example if you have changed a configuration that requires a restart.
@@ -25,6 +31,10 @@ This button is used to restart the Upsy Desky unit, for example if you have chan
 ## Select
 
 ### Height Decoder Variant
+
+:::caution
+This entity was removed in firmware 1.0.0 in lieu of auto-detection. See [this page](../configuration/decoders/index.md) for more information.
+:::
 
 This input selects the decoder variant that will be used to decode the height from the control box. You can read more about decoders [here](../configuration/decoders/index.md).
 
