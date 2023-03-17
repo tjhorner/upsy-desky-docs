@@ -34,3 +34,7 @@ Here is a list of known control box model numbers and the decoders that work wit
 ### Uplift v2
 
 - FRM053-2: `uplift`
+
+### AMQ Activ
+
+- X-AP2-WFC.F3 (V4.2) / 1308870001 rev A: `uplift`
