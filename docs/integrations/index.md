@@ -19,6 +19,8 @@ And if you connect it to Home Assistant, you can use the [wide breadth of integr
 Since there is a standard HTTP API, anyone can create an integration which is designed to work with the Upsy Desky. Here are the integrations that have been created so far:
 
 - [Stream Deck](./stream-deck.md)
+- [Hubitat](./hubitat.md)
+- [Time-Based](./time-based.md)
 
 ## Create Your Own
 
