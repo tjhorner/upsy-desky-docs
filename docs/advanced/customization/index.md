@@ -27,7 +27,7 @@ substitutions:
 packages:
   # Change the line below to reference `base.yaml` instead, if you want the
   # base config (see next section for details)
-  tj_horner.upsy_desky: github://tjhorner/upsy-desky/firmware/stock.yaml@v1.0.2
+  tj_horner.upsy_desky: github://tjhorner/upsy-desky/firmware/stock.yaml@v1.0.3
 esphome:
   name: ${name}
   name_add_mac_suffix: false
@@ -58,7 +58,7 @@ But if you are using a feature from the stock config and it is not in the base c
 substitutions:
   name: upsy-desky-cf32ec
 packages:
-  tj_horner.upsy_desky: github://tjhorner/upsy-desky/firmware/base.yaml@v1.0.2
+  tj_horner.upsy_desky: github://tjhorner/upsy-desky/firmware/base.yaml@v1.0.3
 esphome:
   name: ${name}
   name_add_mac_suffix: false

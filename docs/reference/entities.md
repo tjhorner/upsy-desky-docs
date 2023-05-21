@@ -48,16 +48,6 @@ This input selects the decoder variant that will be used to decode the height fr
 
 ### Height Units
 
-:::info
-This entity was temporarily removed in firmware 1.0.2 due to a compatibility issue with ESPHome 2023.5. You may still change the height units by [customizing the firmware](../advanced/customization/index.md) and adding this to your `substitutions`:
-
-```yaml
-standing_desk_height_units: "cm"
-```
-
-This entity will eventually come back once a fix has been made.
-:::
-
 This input selects the units that will be used to display the height of the desk and the target height of the desk.
 
 **Default:** `in`
