@@ -27,6 +27,18 @@ You can gain more insight into the process by [viewing the logs](#collecting-log
 
 If none of the decoders work, then your desk may use a protocol that is thus-far undiscovered. Please email support@tjhorner.dev and I will work with you to add support for your desk.
 
+### Home Assistant can't connect / `BAD_INDICATOR errno=11`
+
+If Home Assistant can't connect to your Upsy Desky, or you are receiving the error `Reading failed: BAD_INDICATOR errno=11` in the logs, this indicates Home Assistant may be trying to connect with an incorrect encryption key. First, try restarting Home Assistant entirely to see if the issue persists. If it does, here are some things to try based on how you manage your Upsy Desky's firmware updates.
+
+#### OTA Updates / Firmware Binary
+
+The pre-compiled firmware binaries that are used for OTA updates do not have an API encryption key built-in, therefore Home Assistant must be attempting to connect with an encryption key or deprecated API password. To remedy this, please try removing the integration entry for your Upsy Desky by going to **Settings > Devices &amp; Services**, then remove the ESPHome integration for your Upsy Desky there. Then re-add your Upsy Desky to Home Assistant by creating a new ESPHome integration using the device's IP or hostname. Do not specify an encryption key or password if prompted.
+
+#### ESPHome Dashboard
+
+If you manage updates with an ESPHome YAML, you must make sure that the encryption key you specify in the `api:` section of your configuration matches the encryption key that Home Assistant uses. Try re-adding the integration to Home Assistant, and make sure to specify the encryption key when prompted. You may also try removing the encryption key from your configuration to see if this remedies the issue. If it does, this may indicate an issue with Home Assistant or ESPHome itself.
+
 ## Other Issues
 
 If you are experiencing other issues, here are some things to try:
