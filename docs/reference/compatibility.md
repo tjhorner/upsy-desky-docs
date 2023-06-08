@@ -10,6 +10,7 @@ These desk control boxes are verified to be compatible with the Upsy Desky:
 - JCB36N2CA-230 (Fully Jarvis)
 - JCB35N-110 (Fully Jarvis)
 - X-AP2-WFC.F\[1-3\] (V4.2) / 1308870001 rev A (AMQ Activ)
+- DSK20-2 2nd Generation (Desky.com.au)
 - IKEA UPPSPEL
 
 Support outside of these models is not guaranteed, but contributions are welcome if you wish to add support for your own! See the [Reverse Engineering Guide](../advanced/reverse-engineering/index.md) for more detailed instructions on how to do so.
