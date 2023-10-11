@@ -7,6 +7,7 @@ These desk control boxes are verified to be compatible with the Upsy Desky:
 - **Uplift v2**
   - FRM053-2
   - FRM053-3
+  - FRM053-4
 - **Fully Jarvis**
   - FULLYCB2C-A
   - FULLYCB3-A
