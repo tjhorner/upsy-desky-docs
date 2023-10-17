@@ -1,0 +1,39 @@
+# Assessing Compatibility
+
+If your desk's control box model number is not in the [compatibility list](./index.md), this doesn't necessarily mean it's _unsupported_, just that nobody has tested it yet. You can assess whether your desk may be compatible using the steps below. If all the conditions are satisfied, you may be eligible to receive a unit for testing, free of charge.
+
+## Compatibility Checks
+
+### Physical Compatibility
+
+The Upsy Desky is compatible with control boxes that use an RJ45 port to communicate with the keypad. To ensure physical compatibility, check to see if the port used to connect the keypad is RJ45 &mdash; it should have 8 pins and look pretty much identical to an Ethernet jack.
+
+### Electrical Compatibility
+
+Once you have verified the physical compatibility, we need to verify whether the pins on the RJ45 port are connected properly.
+
+Using a multimeter or other method, verify the following pins:
+
+- Pin 3: GND
+- Pin 5: +5V
+
+A diagram of the pin order on an RJ45 connector is provided below.
+
+import diagram from "./rj45-diagram.png"
+
+<img src={diagram} alt="Diagram of RJ45 port and jack displaying the number order of the pins" style={{
+  maxWidth: "500px",
+  background: "white"
+}} />
+
+_Diagram source: [Sylvain Leroux on Wikimedia Commons](https://commons.wikimedia.org/wiki/File:RJ-45_plug_and_jack.svg)_
+
+A helpful tool for measuring the voltage on each pin is an RJ45 breakout board, like [this one](https://www.amazon.com/Poyiccot-Compatible-Terminal-Connector-Ethernet/dp/B07WKKVZRF) &mdash; it will make the process much easier.
+
+### Protocol Compatibility
+
+This one is difficult to test before you receive an Upsy Desky unit and is discussed in further detail in the [reverse engineering guide](../../advanced/reverse-engineering/index.md). It is not required to test this in order to receive a test unit.
+
+## Request Form
+
+If you have tested both physical and electrical compatibility and believe your desk may be compatible, please fill out [this form](https://docs.google.com/forms/d/e/1FAIpQLSeFshQGAnTfLTRiJi8ZqbKaDPycQOh8KrQJ7H5pcFAA4S_UOw/viewform). I'll review your submission and let you know once a test unit is available.
