@@ -1,6 +1,8 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
+const { themes: prismThemes } = require('prism-react-renderer')
+
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Upsy Desky',
@@ -129,8 +131,8 @@ const config = {
       },
       prism: {
         additionalLanguages: ['yaml'],
-        theme: require('prism-react-renderer/themes/vsLight'),
-        darkTheme: require('prism-react-renderer/themes/vsDark'),
+        theme: prismThemes.vsLight,
+        darkTheme: prismThemes.vsDark,
       },
     }),
 };
