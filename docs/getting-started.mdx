@@ -53,10 +53,10 @@ If all else fails, you can try one of the other setup methods.
 The Upsy Desky will be listed as either "CP2102 USB to UART Bridge Controller" or "Upsy Desky" in the connection list. If you don't see it, make sure you are using a USB data cable (i.e., not power-only), and try installing the [driver](https://www.silabs.com/developers/usb-to-uart-bridge-vcp-drivers?tab=downloads) for the serial chip.
 
 <EspInstallButton
-  unsupportedMessage="Provisioning via USB only works in browsers which support Web Serial, such as Chrome or Edge. Please provision your Upsy Desky via Wi-Fi instead." />
+  unsupportedMessage="Provisioning via USB only works in browsers which support Web Serial, such as Chrome or Edge. Please provision your Upsy Desky via Bluetooth or Wi-Fi instead." />
 
   </TabItem>
-  <TabItem value="captive-portal" label={<><icon icon="fa-solid fa-wifi" size="lg"/> Captive Portal (Wi-Fi)</>}>
+  <TabItem value="captive-portal" label={<><icon icon="fa-solid fa-wifi" size="md"/> Captive Portal (Wi-Fi)</>}>
 
 :::note TL;DR
 Connect to the `upsy-desky-XXXXXX` network (password: `hunter2hunter2`), enter Wi-Fi credentials in captive portal prompt.
