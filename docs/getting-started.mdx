@@ -19,9 +19,11 @@ Use one of the below methods to connect your Upsy Desky to Wi-Fi.
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 import EspInstallButton from '@site/src/components/EspInstallButton';
+import { faBluetooth, faUsb } from '@fortawesome/free-brands-svg-icons';
+import { faWifi } from '@fortawesome/free-solid-svg-icons';
 
 <Tabs>
-  <TabItem value="ble" label={<><icon icon="fa-brands fa-bluetooth" size="lg"/> Bluetooth</>} default>
+  <TabItem value="ble" label={<><icon icon={faBluetooth} size="lg"/> Bluetooth</>} default>
 
 :::info
 This method is supported for firmware version 1.1.2 and newer. Units shipped starting October 31, 2023 will have this version.
@@ -48,7 +50,7 @@ You can also try setting it up manually with this button if it's not auto-detect
 If all else fails, you can try one of the other setup methods.
 
   </TabItem>
-  <TabItem value="usb" label={<><icon icon="fa-brands fa-usb" size="lg"/> USB</>}>
+  <TabItem value="usb" label={<><icon icon={faUsb} size="lg"/> USB</>}>
 
 1. Connect the Upsy Desky to your computer via USB
 2. Press the blue connect button below
@@ -61,7 +63,7 @@ The Upsy Desky will be listed as either "CP2102 USB to UART Bridge Controller" o
   unsupportedMessage="Provisioning via USB only works in browsers which support Web Serial, such as Chrome or Edge. Please provision your Upsy Desky via Bluetooth or Wi-Fi instead." />
 
   </TabItem>
-  <TabItem value="captive-portal" label={<><icon icon="fa-solid fa-wifi" size="md"/> Captive Portal (Wi-Fi)</>}>
+  <TabItem value="captive-portal" label={<><icon icon={faWifi} size="md"/> Captive Portal (Wi-Fi)</>}>
 
 :::note TL;DR
 Connect to the `upsy-desky-XXXXXX` network (password: `hunter2hunter2`), enter Wi-Fi credentials in captive portal prompt.
