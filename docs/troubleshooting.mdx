@@ -52,6 +52,12 @@ The pre-compiled firmware binaries that are used for OTA updates do not have an 
 
 If you manage updates with an ESPHome YAML, you must make sure that the encryption key you specify in the `api:` section of your configuration matches the encryption key that Home Assistant uses. Try re-adding the integration to Home Assistant, and make sure to specify the encryption key when prompted. You may also try removing the encryption key from your configuration to see if this remedies the issue. If it does, this may indicate an issue with Home Assistant or ESPHome itself.
 
+### Upsy Desky is powered with USB-C, but not with the control box
+
+If your Upsy Desky can be powered with USB-C but is not powered by your desk's control box (or you are seeing strange power-related behavior), then the first thing you want to check is that you are using a short, high-quality cable. Using a long or lower-quality cable can affect power delivery to the unit and cause issues. I recommend using a CAT6 cable with 24 AWG wires or better, and no longer than 1 meter. [This cable from Monoprice](https://www.amazon.com/Monoprice-Cat6-Ethernet-Patch-Cable/dp/B002RBECAE) should work well.
+
+If you are indeed using a high-quality cable, then it's possible that your desk's control box simply can't provide the current necessary to power the Upsy Desky. It does take up more power than the stock keypad, so this is a possibility. Luckily, you can provide supplemental power via the USB-C port while it's also plugged into the control box; this should resolve any power-related issues you are seeing.
+
 ## Other Issues
 
 If you are experiencing other issues, here are some things to try:
