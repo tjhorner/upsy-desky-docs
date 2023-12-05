@@ -58,6 +58,15 @@ If your Upsy Desky can be powered with USB-C but is not powered by your desk's c
 
 If you are indeed using a high-quality cable, then it's possible that your desk's control box simply can't provide the current necessary to power the Upsy Desky. It does take up more power than the stock keypad, so this is a possibility. Luckily, you can provide supplemental power via the USB-C port while it's also plugged into the control box; this should resolve any power-related issues you are seeing.
 
+### I updated ESPHome and the firmware doesn't compile
+
+If you are managing your firmware via ESPHome and a recent ESPHome update has caused the firmware to fail compilation, please make sure that your configuration packages are up-to-date. You can check the latest version of the config packages [here](https://github.com/tjhorner/upsy-desky/releases/latest). For example, if the latest version is v1.2.3, your `packages` section should look something like this:
+
+```yaml
+packages:
+  tj_horner.upsy_desky: github://tjhorner/upsy-desky/firmware/stock.yaml@v1.2.3
+```
+
 ## Other Issues
 
 If you are experiencing other issues, here are some things to try:
