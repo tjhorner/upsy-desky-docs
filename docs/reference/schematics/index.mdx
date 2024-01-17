@@ -1,0 +1,23 @@
+# Schematics
+
+import BrowserOnly from "@docusaurus/BrowserOnly";
+
+<BrowserOnly>
+  {() => { require("./kicanvas.js") }}
+</BrowserOnly>
+
+The schematics for the Upsy Desky are entirely open source and available for reference. You can also find the KiCad source files on the [GitHub repository](https://github.com/tjhorner/upsy-desky/tree/master/pcb).
+
+You can explore the PCB and schematics design in the interactive viewers below.
+
+## Schematics Viewer
+
+<kicanvas-embed controls="full" controlslist="nooverlay">
+  <kicanvas-source src="https://raw.githubusercontent.com/tjhorner/upsy-desky/master/pcb/upsy-desky.kicad_sch"></kicanvas-source>
+</kicanvas-embed>
+
+## PCB Viewer
+
+<kicanvas-embed controls="full" controlslist="nooverlay">
+  <kicanvas-source src="https://raw.githubusercontent.com/tjhorner/upsy-desky/master/pcb/upsy-desky.kicad_pcb"></kicanvas-source>
+</kicanvas-embed>
