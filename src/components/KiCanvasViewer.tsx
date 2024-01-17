@@ -1,5 +1,5 @@
+import BrowserOnly from "@docusaurus/BrowserOnly";
 import React from 'react';
-import "./kicanvas.js"
 
 declare global {
   namespace JSX {
@@ -14,6 +14,11 @@ declare global {
 
 export default function KiCanvasViewer({ src = "" }) {
   return (
-    <kicanvas-embed controls="full" controlslist="nooverlay" src={src} />
+    <BrowserOnly>
+      {() => {
+        require("./kicanvas")
+        return <kicanvas-embed controls="full" controlslist="nooverlay" src={src} />
+      }}
+    </BrowserOnly>
   )
 }
