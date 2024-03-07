@@ -25,7 +25,7 @@ The enclosure comes in two parts &mdash; the case and the cover. You can downloa
 2. Slide the board in, making sure the USB-C port remains aligned.
 3. Once the USB-C port is seated inside the hole, press down on the board.
 4. Use the screws to mount the board to the enclosure. **Be sure not to tighten too much**; just enough to be snug.
-5. Snap the cover onto the case at an angle.
+5. Snap the cover onto the case at an angle. **Note that the cover has an indentation for the RJ45 jacks**; ensure that it is aligned properly.
 
 At this point you can finalize the installation by sticking the Upsy Desky on the underside of your desk. Ta-da!
 
