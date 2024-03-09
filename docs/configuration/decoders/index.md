@@ -18,7 +18,7 @@ Despite their names, it is possible for a decoder to work on a different brand o
 
 ## Auto-Detection
 
-During startup, the firmware will automatically attempt to determine the correct decoder to use. It sends a packet to the control box to wake it up, and cycles through each possible decoder to see which one produces a valid height value. If you are having trouble with this (i.e., the desk height is reported as "Unknown"), please see [this section](../../troubleshooting.mdx#the-desk-height-is-not-being-reported-properly) of the troubleshooting guide for further instructions.
+During startup, the firmware will automatically attempt to determine the correct decoder to use. It sends a packet to the control box to wake it up, and cycles through each possible decoder to see which one produces a valid height value. If you are having trouble with this (i.e., the desk height is reported as "Unknown"), please see [this section](../../troubleshooting/index.mdx#the-desk-height-is-not-being-reported-properly) of the troubleshooting guide for further instructions.
 
 ## Decoders by Model Number
 
