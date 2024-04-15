@@ -127,7 +127,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} TJ Horner`,
+        copyright: `Copyright © ${new Date().getFullYear()} TJ Horner &mdash; provided under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en" target="_blank">CC BY-NC-SA 4.0</a>`,
       },
       prism: {
         additionalLanguages: ['yaml'],
