@@ -17,7 +17,7 @@ To stick the enclosure to the underside of your desk you can use any double-side
 
 ## 3D Model Files
 
-The enclosure comes in two parts &mdash; the case and the cover. You can download a ZIP containing STL files for each of these parts at this link: [Download STL Files](/enclosure.zip)
+The enclosure comes in two parts &mdash; the case and the cover. You can download a ZIP containing STL files for each of these parts at this link: [Download STL Files](./enclosure.zip)
 
 ## Assembly
 

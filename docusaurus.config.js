@@ -14,7 +14,6 @@ const config = {
 
   organizationName: 'tjhorner', // Usually your GitHub org/user name.
   projectName: 'upsy-desky-docs', // Usually your repo name.
-  trailingSlash: true,
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
