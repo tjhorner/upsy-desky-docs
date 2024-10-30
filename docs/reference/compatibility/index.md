@@ -24,6 +24,7 @@ These desk control boxes are verified to be compatible with the Upsy Desky:
   - VARINS1 (Vari Essential Electric)
 - **Miscellaneous**
   - JCB36N4CA (Deskhaus Apex Pro)
+  - JCB36N2HAG-230 (BOHO Office Basic Line)
   - X-AP2-WFC.F\[1-3\] (V4.2) / 1308870001 rev A (AMQ Activ)
   - DSK20-2 2nd Generation (Desky.com.au)
   - IKEA UPPSPEL
