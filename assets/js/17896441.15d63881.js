@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkupsy_desky_docs=self.webpackChunkupsy_desky_docs||[]).push([[401],{4577:(s,c,d)=>{d.d(c,{A:()=>k});var e=d(4236),u=d(7451);d(8024);d(6963).$W.autoAddCss=!1;const k={...e.A,icon:u.g}}}]);

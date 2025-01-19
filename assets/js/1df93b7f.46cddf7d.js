@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkupsy_desky_docs=self.webpackChunkupsy_desky_docs||[]).push([[237],{6489:(s,u,e)=>{e.r(u),e.d(u,{default:()=>t});var c=e(8903),d=(e(959),e(1527));function t(){return(0,d.jsx)(c.l_,{to:"/docs/introduction"})}}}]);
