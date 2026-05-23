@@ -18,10 +18,10 @@ If you have a hidden SSID, you will either need to unhide it, or [adopt your Ups
 
 Use one of the below methods to connect your Upsy Desky to Wi-Fi.
 
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
-import EspInstallButton from '@site/src/components/EspInstallButton';
-import { faBluetooth, faUsb } from '@fortawesome/free-brands-svg-icons';
+import Tabs from '@theme/Tabs'
+import TabItem from '@theme/TabItem'
+import EspInstallButton from '@site/src/components/EspInstallButton'
+import { faBluetooth, faUsb } from '@fortawesome/free-brands-svg-icons'
 import { faWifi } from '@fortawesome/free-solid-svg-icons';
 
 <Tabs>
@@ -62,7 +62,7 @@ If all else fails, you can try one of the other setup methods.
 The Upsy Desky will be listed as either "CP2102 USB to UART Bridge Controller" or "Upsy Desky" in the connection list. If you don't see it, make sure you are using a USB data cable (i.e., not power-only), and try installing the [driver](https://www.silabs.com/developers/usb-to-uart-bridge-vcp-drivers?tab=downloads) for the serial chip.
 
 <EspInstallButton
-  unsupportedMessage="Provisioning via USB only works in browsers which support Web Serial, such as Chrome or Edge. Please provision your Upsy Desky via Bluetooth or Wi-Fi instead." />
+  unsupportedMessage="Provisioning via USB only works in browsers which support Web Serial, such as Google Chrome, Microsoft Edge, Firefox 151+, or another Chromium-based browser. Please provision your Upsy Desky via Bluetooth or Wi-Fi instead." />
 
   </TabItem>
   <TabItem value="captive-portal" label={<><icon icon={faWifi} size="md"/> Captive Portal (Wi-Fi)</>}>
